@@ -1,0 +1,46 @@
+<!Doctype Html>
+<Html>
+<head>
+    <title>Cycles-Shop to Stay Healthy</title>
+    <link rel="stylesheet" type="text/css" href="eshop.css">
+    
+    <!-- bootstrap CDN-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    
+</head>
+<body onload = formload()>
+    <div class="container">
+        <div id="main" class="row">
+            <div id="productbought" class="col-sm">
+                <img id="productbuy" src="" alt="Product Bought">
+            </div>
+            
+            <div id="sale" class="col-sm">
+                <form action="/action_page.php" method="post">
+                 First Name<input type="text" id="fName" required><br><br>
+                Last Name<input type="text" id="lName" required><br><br>
+                Card Number<input type="text" id="cardno" required> <span style="visibility: hidden; color: red">Enter numbers in the corect format</span><br><br>
+                Expiry Date<input type="date" id="expdate" required><br><br>
+                Cvv <input type="text" id="cvv" required><span style="visibility: hidden; color: red"></span><br><br>
+                Amount<input type="text" id="amt" required> <span></span><br><br>
+                <input type="button" onclick="payment(), nameone()" value="Continue Payment">
+                <input type="button" onclick="productpage()" value="Continue Shopping">
+                    
+                </form>
+                    <hr>
+            </div>    
+        </div>
+    
+    
+    
+    </div>
+    
+    
+    <script src="eshop.js"></script>
+</body>
+</Html>
